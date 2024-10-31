@@ -16,6 +16,9 @@ public class PlayerMovement : MonoBehaviour
     bool isCollidingWithObject = false;
     Collider colliderOfObjectToCollect;
 
+    bool isRunning = false;
+    float runSpeed = 10f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -41,8 +44,10 @@ public class PlayerMovement : MonoBehaviour
 
         if (playerController.isGrounded)
         {
+            isRunning = Input.GetButton("Run");
+
             direction = new Vector3(horizontal, 0, vertical);
-            direction = transform.TransformDirection(direction) * speed;
+            direction = transform.TransformDirection(direction) * ((isRunning) ? runSpeed : speed);
 
             if (Input.GetButton("Jump"))
             {
