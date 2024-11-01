@@ -47,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
             isRunning = Input.GetButton("Run");
 
             direction = new Vector3(horizontal, 0, vertical);
+           
             direction = transform.TransformDirection(direction) * ((isRunning) ? runSpeed : speed);
 
             if (Input.GetButton("Jump"))
