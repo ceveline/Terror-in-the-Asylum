@@ -19,12 +19,15 @@ public class PlayerMovement : MonoBehaviour
     bool isRunning = false;
     float runSpeed = 10f;
 
+   public  GameObject inventory;
+   bool inventoryStatus = false;
 
     // Start is called before the first frame update
     void Start()
     {
         playerController = GetComponent<CharacterController>();
         playerCamera = Camera.main;
+
         //lock cursor to center of screen
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -34,7 +37,12 @@ public class PlayerMovement : MonoBehaviour
     {
         HandlePlayerMovement();
         LookAround();
+        //If player is colliding with object and pressing the E key
         CheckForObjectCollecting();
+
+        //Open the inventory if the player is pressing I
+        OpenCloseInventory();
+
     }
 
     void HandlePlayerMovement()
@@ -103,6 +111,17 @@ public class PlayerMovement : MonoBehaviour
         other.gameObject.SetActive(false);
         //set isColliding bool back to false
         isCollidingWithObject = true;
+    }
+
+    void OpenCloseInventory()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            //set the inventory status to the opposiet of what it currently is
+            //allows the player to open and close the inventory by pressing the I key
+            inventory.SetActive(!inventoryStatus);
+            inventoryStatus = !inventoryStatus;
+        }
     }
 
 }
