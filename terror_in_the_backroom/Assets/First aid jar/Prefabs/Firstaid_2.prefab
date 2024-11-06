@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2679177288160867593}
   - component: {fileID: 1333490009387334316}
   - component: {fileID: 3847610446790037094}
-  - component: {fileID: 5317634711164881384}
+  - component: {fileID: 6084123177419989161}
   m_Layer: 0
   m_Name: Firstaid_2
   m_TagString: Collectible
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5317634711164881384
-MeshCollider:
+--- !u!136 &6084123177419989161
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102,7 +102,8 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1948423400586059757, guid: 687f9559644557d4ba5b955087ff2032, type: 3}
+  serializedVersion: 2
+  m_Radius: 0.15
+  m_Height: 0.13678871
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.068398155, z: 0}
