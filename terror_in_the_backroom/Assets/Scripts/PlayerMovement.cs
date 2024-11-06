@@ -36,7 +36,13 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         HandlePlayerMovement();
-        LookAround();
+       
+        //we only allow the mouse to rotate the camera is the inventory is not active
+        if(!inventoryStatus)
+        {
+         LookAround();
+        }
+       
         //If player is colliding with object and pressing the E key
         CheckForObjectCollecting();
 
