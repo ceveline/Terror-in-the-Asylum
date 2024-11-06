@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     {
         HandlePlayerMovement();
        
-        //we only allow the mouse to rotate the camera is the inventory is not active
+        //we only allow the mouse to rotate the camera is the inventory s not active
         if(!inventoryStatus)
         {
          LookAround();
