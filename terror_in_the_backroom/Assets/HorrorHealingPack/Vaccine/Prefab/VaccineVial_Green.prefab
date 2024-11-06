@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2556641378159951582}
-  - component: {fileID: 4659967513970506140}
+  - component: {fileID: 8993318526819758836}
   m_Layer: 0
   m_Name: VaccineVial_Green
   m_TagString: Collectible
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 8478184706764631104}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &4659967513970506140
+--- !u!136 &8993318526819758836
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
