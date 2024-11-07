@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4773913227884012698}
   - component: {fileID: -7155851154121964071}
+  - component: {fileID: -6763169560384256019}
   m_Layer: 0
   m_Name: PillsTubeRed
   m_TagString: Collectible
@@ -56,6 +57,19 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-6763169560384256019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5559945759241295410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403552ca4be3e3042929558acec469c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 3c5e439f5dca6d444a6b01f1faef7671, type: 2}
 --- !u!1001 &7214327795436701685
 PrefabInstance:
   m_ObjectHideFlags: 0

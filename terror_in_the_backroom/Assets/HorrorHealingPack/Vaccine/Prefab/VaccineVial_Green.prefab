@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2556641378159951582}
   - component: {fileID: 8993318526819758836}
+  - component: {fileID: 1602463824026978879}
   m_Layer: 0
   m_Name: VaccineVial_Green
   m_TagString: Collectible
@@ -56,6 +57,19 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1602463824026978879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4154198779734598649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403552ca4be3e3042929558acec469c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 5b5da35a4424c784f90dce3ebe7eee0f, type: 2}
 --- !u!1001 &8224181427129256875
 PrefabInstance:
   m_ObjectHideFlags: 0
