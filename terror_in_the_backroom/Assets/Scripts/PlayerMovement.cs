@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
         }
        
         //If player is colliding with object and pressing the E key
-        CheckForObjectCollecting();
+        //CheckForObjectCollecting();
 
         //Open the inventory if the player is pressing I
         OpenCloseInventory();
@@ -92,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    public void OnTriggerEnter(Collider other)
+    /*public void OnTriggerEnter(Collider other)
     {
 
         if (other.gameObject.CompareTag("Collectible"))
@@ -101,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
             colliderOfObjectToCollect = other;
         }
     }
-    void CheckForObjectCollecting()
+   /* void CheckForObjectCollecting()
     {
         //only collect item if a player is colliding with is and pressing the E key
         if (isCollidingWithObject && Input.GetKeyDown(KeyCode.E))
@@ -116,9 +116,9 @@ public class PlayerMovement : MonoBehaviour
         //TODO: logic to add item inventory
         other.gameObject.SetActive(false);
         //set isColliding bool back to false
-        isCollidingWithObject = true;
+        isCollidingWithObject = false;
     }
-
+   */
     void OpenCloseInventory()
     {
         if (Input.GetKeyDown(KeyCode.I))
@@ -127,6 +127,9 @@ public class PlayerMovement : MonoBehaviour
             //allows the player to open and close the inventory by pressing the I key
             inventory.SetActive(!inventoryStatus);
             inventoryStatus = !inventoryStatus;
+
+            //update inventory with items that have been collected
+            InventoryManager.Instance.ListItems();
         }
     }
 

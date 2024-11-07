@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3683722764769780166}
   - component: {fileID: -4747768438253793166}
   - component: {fileID: -2035271084439127461}
+  - component: {fileID: 8134629720142754959}
   m_Layer: 0
   m_Name: VaccineVial_Purple
   m_TagString: Collectible
@@ -67,6 +68,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 403552ca4be3e3042929558acec469c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 3760e0c06d42fd64dbac7c6001512954, type: 2}
+--- !u!114 &8134629720142754959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302269891478966354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3e7f7964cd72546b4db9432284a3bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 3760e0c06d42fd64dbac7c6001512954, type: 2}
