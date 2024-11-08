@@ -28,6 +28,13 @@ public class InventoryManager : MonoBehaviour
 
     public void ListItems()
     {
+        //prevent items from being duplicated each time the inventory is opened
+        //destroy all items currently in the inventory because we reinstatiate all the items in the list anyways
+        foreach(Transform item in ItemContent)
+        {
+            Destroy(item.gameObject);
+        }
+
         foreach(var item in Items)
         {
             GameObject obj = Instantiate(InventoryItem, ItemContent);
