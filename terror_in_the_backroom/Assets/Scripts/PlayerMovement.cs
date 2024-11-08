@@ -19,12 +19,15 @@ public class PlayerMovement : MonoBehaviour
     bool isRunning = false;
     float runSpeed = 10f;
 
+   public  GameObject inventory;
+   bool inventoryStatus = false;
 
     // Start is called before the first frame update
     void Start()
     {
         playerController = GetComponent<CharacterController>();
         playerCamera = Camera.main;
+
         //lock cursor to center of screen
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -33,8 +36,19 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         HandlePlayerMovement();
-        LookAround();
-        CheckForObjectCollecting();
+       
+        //we only allow the mouse to rotate the camera is the inventory s not active
+        if(!inventoryStatus)
+        {
+         LookAround();
+        }
+       
+        //If player is colliding with object and pressing the E key
+        //CheckForObjectCollecting();
+
+        //Open the inventory if the player is pressing I
+        OpenCloseInventory();
+
     }
 
     void HandlePlayerMovement()
@@ -78,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    public void OnTriggerEnter(Collider other)
+    /*public void OnTriggerEnter(Collider other)
     {
 
         if (other.gameObject.CompareTag("Collectible"))
@@ -87,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
             colliderOfObjectToCollect = other;
         }
     }
-    void CheckForObjectCollecting()
+   /* void CheckForObjectCollecting()
     {
         //only collect item if a player is colliding with is and pressing the E key
         if (isCollidingWithObject && Input.GetKeyDown(KeyCode.E))
@@ -102,7 +116,21 @@ public class PlayerMovement : MonoBehaviour
         //TODO: logic to add item inventory
         other.gameObject.SetActive(false);
         //set isColliding bool back to false
-        isCollidingWithObject = true;
+        isCollidingWithObject = false;
+    }
+   */
+    void OpenCloseInventory()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            //set the inventory status to the opposiet of what it currently is
+            //allows the player to open and close the inventory by pressing the I key
+            inventory.SetActive(!inventoryStatus);
+            inventoryStatus = !inventoryStatus;
+
+            //update inventory with items that have been collected
+            InventoryManager.Instance.ListItems();
+        }
     }
 
 }
