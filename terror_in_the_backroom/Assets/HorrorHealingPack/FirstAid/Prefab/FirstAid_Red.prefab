@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7004791479623421552}
   - component: {fileID: 7629984364074485059}
+  - component: {fileID: -2112858233192133726}
+  - component: {fileID: -9166693273072628345}
   m_Layer: 0
   m_Name: FirstAid_Red
   m_TagString: Collectible
@@ -54,6 +56,32 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2112858233192133726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5396988188536389404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403552ca4be3e3042929558acec469c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: d25824e93b6b5fe459e2cd3f98fb045b, type: 2}
+--- !u!114 &-9166693273072628345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5396988188536389404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3e7f7964cd72546b4db9432284a3bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: d25824e93b6b5fe459e2cd3f98fb045b, type: 2}
 --- !u!1001 &8432876519998590195
 PrefabInstance:
   m_ObjectHideFlags: 0
