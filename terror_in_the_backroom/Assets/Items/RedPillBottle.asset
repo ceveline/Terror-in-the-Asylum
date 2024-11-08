@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: RedPillBottle
   m_EditorClassIdentifier: 
   id: 2
-  itemName: RedPillBottle
+  itemName: Red Pills
   icon: {fileID: 21300000, guid: e9bb4d9855f77a14fb90c936f78812cc, type: 3}

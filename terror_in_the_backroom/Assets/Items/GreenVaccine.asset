@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: GreenVaccine
   m_EditorClassIdentifier: 
   id: 5
-  itemName: GreenVaccine
+  itemName: Green Vaccine
   icon: {fileID: 21300000, guid: db5f33be6c6706b4a9e32c11c91851c1, type: 3}

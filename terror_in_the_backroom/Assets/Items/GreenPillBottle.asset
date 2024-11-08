@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: GreenPillBottle
   m_EditorClassIdentifier: 
   id: 1
-  itemName: GreenPillBottle
+  itemName: Green Pills
   icon: {fileID: 21300000, guid: cc1d47cf07758074986de39fa1d4ad70, type: 3}

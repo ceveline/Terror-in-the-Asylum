@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PurpleVaccine
   m_EditorClassIdentifier: 
   id: 6
-  itemName: PurpleVaccine
+  itemName: Purple Vaccine
   icon: {fileID: 21300000, guid: c43343a6345f714459869ffa4a9aa6db, type: 3}
