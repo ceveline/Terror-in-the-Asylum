@@ -2,7 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-/terror_in_the_backroom/[Ll]ibrary/
+terror_in_the_backroom/[Ll]ibrary/
 /terror_in_the_backroom/[Tt]emp/
 /terror_in_the_backroom/[Oo]bj/
 /terror_in_the_backroom/[Bb]uild/
